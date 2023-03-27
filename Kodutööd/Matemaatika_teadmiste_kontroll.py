@@ -16,6 +16,8 @@
 #60-75% - Hinne 3
 #75-90% - Hinne 4
 #>90% - Hinne 5
+#!!!strip() - это метод строки в Python, который удаляет все указанные символы в начале и конце строки (по умолчанию удаляются пробельные символы).
+#!!!f перед строкой - это так называемая "f-строка" (или форматированная строка) в Python, которая позволяет вставлять значения переменных и выражений внутри строки.
 
 from math import *
 
@@ -48,7 +50,7 @@ for i in range(Katse):
 
     Kusimus = f"{n} {k} {m}"
     Vastus = input(f"Введи ответ на пример {Kusimus}: ")
-    if str(eval(Kusimus)) == Vastus.strip():
+    if str(eval(Kusimus)) == Vastus.strip():      
         print("Правильно!")
         oiged_vastused += 1
     else:
