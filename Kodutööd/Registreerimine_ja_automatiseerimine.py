@@ -115,14 +115,17 @@ def parooli_kontrollimine(parool:str):
     c = 0
     for i in range(arv):
         #Перебираем каждый символ в пароле и проверяем, является ли он цифрой, заглавной буквой или буквой. Если да, то добавляем +1 к определенной переменной
+        #isdigit() -kontrollib, kas on muutuja arv ja tagastab True või False
         if parool[i].isdigit():
             a += 1
         else:
             a += 0
+        #isupper() - kontrollib, kas oli sisestatud suurtähtedega muutuja
         if parool[i].isupper():
             b += 1
         else:
             b += 0
+        #isalpha() - проверяет состоит ли строка только из буквенных символов или нет
         if parool[i].isalpha() == True:
             c += 1
         else:
