@@ -59,13 +59,13 @@ vastuvõetud.sort(key=lambda x: x[1], reverse=True)
 eisoobi.sort()
 
 # Записываем списки принятых и не принятых соискателей в файлы
-with open('vastuvõetud.txt', 'w') as file:
+with open('vastuvõetud.txt', 'w+') as f:
     for nimi, punktid in vastuvõetud:
-        file.write(f'{nimi}: {punktid}\n')
+        f.write(f'{nimi}: {punktid}\n')
 
-with open('eisoobi.txt', 'w') as file:
+with open('eisoobi.txt', 'w+') as f1:
     for nimi in eisoobi:
-        file.write(f'{nimi}: {punktid}\n')
+        f1.write(f'{nimi}: {punktid}\n')
 
 #Выводим списки на экран
 print("Принятые соискатели:")
