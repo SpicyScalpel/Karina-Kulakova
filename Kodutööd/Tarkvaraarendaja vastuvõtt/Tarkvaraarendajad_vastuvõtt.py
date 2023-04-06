@@ -27,7 +27,7 @@ def read_vastused():
 kusimused_vastused = read_kusimused_vastused()
 
 # Kоличество опрашиваемых
-inimeste_arv = 5
+inimeste_arv = 2
 
 # Список принятых и не принятых соискателей
 vastuvõetud = []
